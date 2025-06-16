@@ -1,0 +1,20 @@
+Copyright (c) 2025 João Paulo Pinheiro Mourão
+
+TODOS OS DIREITOS RESERVADOS
+
+Este software é propriedade intelectual de João Paulo Pinheiro Mourão. O uso, cópia, modificação, distribuição ou qualquer outra forma de utilização, total ou parcial, deste código-fonte ou qualquer derivado, é EXPRESSAMENTE PROIBIDO sem autorização prévia por escrito.
+
+Ao acessar este software, o usuário concorda com as seguintes condições:
+
+1. Este software NÃO É DE CÓDIGO ABERTO.
+2. Nenhum direito de redistribuição ou modificação é concedido.
+3. É proibido realizar engenharia reversa, descompilação ou desmontagem do software.
+4. É proibido reutilizar qualquer parte do código-fonte ou da arquitetura do sistema para criação de projetos similares, concorrentes ou derivados.
+5. O autor não se responsabiliza por quaisquer danos diretos ou indiretos resultantes do uso deste software.
+
+Qualquer violação estará sujeita a penalidades civis e criminais conforme a legislação vigente.
+
+Para licenciamento, contato comercial ou dúvidas legais:
+📧 joaopaulopinheiro59675@gmail.com
+
+Versão da Licença: 1.0 – Emitida em 2025
