@@ -10,7 +10,7 @@ Um sistema robusto para gerenciar operações de frete, desde o registro inicial
 - [Sobre o Projeto](#-sobre-o-projeto)
 - [Funcionalidades](#-funcionalidades)
 - [Casos de Uso](#-casos-de-uso)
-- [Tecnologias (Stacks)](#-tecnologias-stacks)
+- [Tecnologias e Arquitetura](#-tecnologias-e-arquitetura)
 - [Plano de Desenvolvimento](#-plano-de-desenvolvimento)
 - [Como Contribuir](#-como-contribuir)
 - [Licença](#-licença)
@@ -69,15 +69,56 @@ O principal ator do sistema é o **Gestor de Logística**. Abaixo estão os prin
 
 ---
 
-## 🛠️ Tecnologias (Stacks)
+## 🛠️ Tecnologias e Arquitetura
 
-*(Esta seção deve ser preenchida com as tecnologias escolhidas para o projeto).*
+A arquitetura do projeto segue uma abordagem moderna e desacoplada, utilizando **.NET** para o backend e **Angular** para o frontend.
 
-**Exemplo de Stack Web:**
-- **Frontend:** React.js, Vite, TypeScript, Tailwind CSS
-- **Backend:** Node.js, Express, Prisma ORM
-- **Banco de Dados:** PostgreSQL
-- **DevOps:** Docker
+### Backend (.NET / C#)
+O backend é construído com **ASP.NET Core Web API** e segue os princípios da **Clean Architecture**, promovendo separação de responsabilidades, alta testabilidade e manutenção simplificada.
+
+- **Tecnologias Principais:**
+    - **Framework:** .NET 8 (ou superior)
+    - **Linguagem:** C#
+    - **API:** ASP.NET Core Web API
+    - **ORM:** Entity Framework Core
+- **Estrutura de Projetos:**
+    ```
+    /GestaoFretes.sln
+    |
+    |-- /src
+    |   |-- GestaoFretes.Domain      (Entidades e Lógica de Negócio)
+    |   |-- GestaoFretes.Application (Serviços e Casos de Uso)
+    |   |-- GestaoFretes.Infrastructure (Acesso a Dados, Repositórios)
+    |   |-- GestaoFretes.Api         (Controllers da API RESTful)
+    |
+    |-- /tests
+    |   |-- GestaoFretes.Domain.Tests
+    |   |-- GestaoFretes.Application.Tests
+    ```
+
+### Frontend (Angular / TypeScript)
+O frontend é uma **Single Page Application (SPA)** desenvolvida com Angular, garantindo uma experiência de usuário rica e reativa.
+
+- **Tecnologias Principais:**
+    - **Framework:** Angular 17 (ou superior)
+    - **Linguagem:** TypeScript
+    - **Comunicação API:** HttpClient para consumir os endpoints REST do backend.
+- **Estrutura de Diretórios:**
+    ```
+    /gestao-fretes-web
+    |-- /src
+    |   |-- /app
+    |   |   |-- /core (Serviços core, interceptors, guards)
+    |   |   |-- /features
+    |   |   |   |-- /fretes
+    |   |   |   |-- /relatorios
+    |   |   |-- /shared (Componentes e pipes compartilhados)
+    |   |-- /environments (Configurações de ambiente)
+    ```
+
+### Banco de Dados
+- **Tecnologia:** Banco de dados relacional.
+- **Opções Recomendadas:** **SQL Server**, **PostgreSQL** ou **MySQL**, todos com excelente suporte do Entity Framework Core.
 
 ---
 
