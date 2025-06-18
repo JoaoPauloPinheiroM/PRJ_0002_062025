@@ -118,7 +118,7 @@ O frontend é uma **Single Page Application (SPA)** desenvolvida com Angular, ga
 
 ### Banco de Dados
 - **Tecnologia:** Banco de dados relacional.
-- **Opções Recomendadas:** **SQL Server**, **PostgreSQL** ou **MySQL**, todos com excelente suporte do Entity Framework Core.
+- **Opções:** **SQL Server**.
 
 ---
 
